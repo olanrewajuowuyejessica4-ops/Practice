@@ -194,7 +194,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Receives real-time repayment notification events from FCMB. When a customer makes a loan repayment, FCMB sends an automatic notification to this endpoint to update the system with the latest payment details. This ensures that loan repayment records are always accurate and up to date."
       }
     },
     "/api/Laf/{reference}/document": {

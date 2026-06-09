@@ -10,10 +10,7 @@ hidden: false
 > Webhook Notifications — Get real-time alerts when payment events happen
 > Transaction Management — Initiate and monitor financial transactions
 >
-> Base URL
-> [https://fincore-qa.creditdirect.ng](https://fincore-qa.creditdirect.ng)
-> A Quick Note
-> This is the QA (testing) environment. All endpoints here are for integration and testing purposes. Please reach out to the Credit Direct technical team to get access to the production environment.
+>
 
 <Cards>
   {/* Edit the props below to customize these components */}

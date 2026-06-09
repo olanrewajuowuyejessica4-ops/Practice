@@ -34,7 +34,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Creates a new customer account in the Fincore system. Use this endpoint to onboard a new customer by submitting their required account details. On success, the system registers the customer and returns their account information."
       }
     },
     "/api/customers/{id}": {

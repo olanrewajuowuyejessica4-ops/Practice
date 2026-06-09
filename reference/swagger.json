@@ -115,7 +115,7 @@
             "description": "OK"
           }
         },
-        "description": "Submits a new loan application through FCMB on behalf of a customer. This endpoint initiates the loan application process by accepting the applicant's details and forwarding the request to FCMB for processing. A successful request returns a loan reference that can be used to track the application."
+        "description": "Retrieves the details of a specific loan application using its unique loan ID. Use this endpoint to check the current status and information of a loan that has already been submitted. Replace {id} in the URL with the actual loan ID."
       }
     },
     "/api/fcmb/loan/{loanId}/laf": {

@@ -217,7 +217,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Retrieves the document associated with a specific Loan Application Form (LAF) using its unique reference. This endpoint is used to access the official loan document tied to a customer's application, which may be required for signing, verification, or compliance purposes. Replace {reference} in the URL with the actual LAF reference number."
       }
     },
     "/api/Laf/{reference}/otp/send": {

@@ -327,7 +327,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Re-queries the status of a previously initiated transaction using its unique transaction reference. This endpoint is useful when the status of a transfer is unclear or unconfirmed, allowing the system to check and return the latest status of that transaction. Replace {transRef} in the URL with the actual transaction reference number."
       }
     }
   },

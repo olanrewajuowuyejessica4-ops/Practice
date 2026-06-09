@@ -1,0 +1,741 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Fincore Service",
+    "description": "Fincore Service Api",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/customers/accounts": {
+      "post": {
+        "tags": [
+          "Customer"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountCreationRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountCreationRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountCreationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/customers/{id}": {
+      "get": {
+        "tags": [
+          "Customer"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/fcmb/loan/apply": {
+      "post": {
+        "tags": [
+          "FcmbPos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoanApplicationRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoanApplicationRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoanApplicationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/fcmb/loan/{id}": {
+      "get": {
+        "tags": [
+          "FcmbPos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/fcmb/loan/{loanId}/laf": {
+      "get": {
+        "tags": [
+          "FcmbPos"
+        ],
+        "parameters": [
+          {
+            "name": "loanId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/fcmb/loan/{loanId}/laf/accept": {
+      "get": {
+        "tags": [
+          "FcmbPos"
+        ],
+        "parameters": [
+          {
+            "name": "loanId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/fcmb/repayment-notification": {
+      "post": {
+        "tags": [
+          "FcmbPosWebhook"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FcmbPosRepaymentDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FcmbPosRepaymentDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FcmbPosRepaymentDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Laf/{reference}/document": {
+      "get": {
+        "tags": [
+          "Laf"
+        ],
+        "parameters": [
+          {
+            "name": "reference",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Laf/{reference}/otp/send": {
+      "post": {
+        "tags": [
+          "Laf"
+        ],
+        "parameters": [
+          {
+            "name": "reference",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Laf/otp/confirm": {
+      "post": {
+        "tags": [
+          "Laf"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfirmLafOtpRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfirmLafOtpRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfirmLafOtpRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Transaction/initiate-transfer": {
+      "post": {
+        "tags": [
+          "Transaction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InitiateTransferDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InitiateTransferDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/InitiateTransferDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Transaction/{transRef}/re-query": {
+      "get": {
+        "tags": [
+          "Transaction"
+        ],
+        "parameters": [
+          {
+            "name": "transRef",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AccountCreationRequest": {
+        "required": [
+          "address",
+          "bvn",
+          "dob",
+          "email",
+          "first_name",
+          "gender",
+          "next_of_kin",
+          "phone",
+          "product_id",
+          "proof_of_address",
+          "proof_of_id",
+          "surname"
+        ],
+        "type": "object",
+        "properties": {
+          "customer_ref": {
+            "type": "string",
+            "nullable": true
+          },
+          "product_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "name_on_account": {
+            "type": "string",
+            "nullable": true
+          },
+          "dob": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "first_name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "middle_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "surname": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "gender": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "bvn": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "phone": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "proof_of_id": {
+            "$ref": "#/components/schemas/Document"
+          },
+          "proof_of_address": {
+            "$ref": "#/components/schemas/Document"
+          },
+          "address": {
+            "$ref": "#/components/schemas/Address"
+          },
+          "next_of_kin": {
+            "$ref": "#/components/schemas/NextOfKin"
+          },
+          "custom_properties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ClientCustomPropertyTypeCustomProperties"
+            },
+            "description": "Each item corresponds to a ClientCustomPropertyType property. Expected values: NIN, MeterNumber, NetPay, NextOfKinDOB, StateOfOrigin, NyscCertificate, StatementOfResult",
+            "nullable": true,
+            "example": [
+              {
+                "id": "NIN",
+                "description": "NIN",
+                "value": "ABC123"
+              },
+              {
+                "id": "MeterNumber",
+                "description": "MeterNumber",
+                "value": "ABC123"
+              },
+              {
+                "id": "NetPay",
+                "description": "NetPay",
+                "value": "50000.00"
+              },
+              {
+                "id": "NextOfKinDOB",
+                "description": "NextOfKinDOB",
+                "value": "2024-01-01"
+              },
+              {
+                "id": "StateOfOrigin",
+                "description": "StateOfOrigin",
+                "value": "ABC123"
+              },
+              {
+                "id": "NyscCertificate",
+                "description": "NyscCertificate",
+                "value": "ABC123"
+              },
+              {
+                "id": "StatementOfResult",
+                "description": "StatementOfResult",
+                "value": "ABC123"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "Address": {
+        "type": "object",
+        "properties": {
+          "street": {
+            "type": "string",
+            "nullable": true
+          },
+          "area": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "local_government": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ClientCustomPropertyType": {
+        "enum": [
+          "NIN",
+          "MeterNumber",
+          "NetPay",
+          "NextOfKinDOB",
+          "StateOfOrigin",
+          "NyscCertificate",
+          "StatementOfResult"
+        ],
+        "type": "string"
+      },
+      "ClientCustomPropertyTypeCustomProperties": {
+        "required": [
+          "id",
+          "value"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "$ref": "#/components/schemas/ClientCustomPropertyType"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ConfirmLafOtpRequestDto": {
+        "required": [
+          "otp",
+          "reference"
+        ],
+        "type": "object",
+        "properties": {
+          "reference": {
+            "type": "string",
+            "nullable": true
+          },
+          "otp": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Document": {
+        "type": "object",
+        "properties": {
+          "document_type": {
+            "$ref": "#/components/schemas/DocumentType"
+          },
+          "document": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DocumentType": {
+        "enum": [
+          "Passport",
+          "Id",
+          "DriverLicense",
+          "Others"
+        ],
+        "type": "string"
+      },
+      "FcmbPosRepaymentDto": {
+        "required": [
+          "amount",
+          "loanId",
+          "merchantId",
+          "transDate",
+          "transRef"
+        ],
+        "type": "object",
+        "properties": {
+          "loanId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "transRef": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "transDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "merchantId": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "InitiateTransferDto": {
+        "required": [
+          "amount",
+          "destinationAccount",
+          "destinationBankCode",
+          "transRef"
+        ],
+        "type": "object",
+        "properties": {
+          "destinationAccount": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "destinationBankCode": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "sourceAccount": {
+            "type": "string",
+            "nullable": true
+          },
+          "sourceBankCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "narration": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "transRef": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "transDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoanApplicationRequest": {
+        "required": [
+          "accountNumber",
+          "amount",
+          "bankCode",
+          "bvn"
+        ],
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "bvn": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "nin": {
+            "type": "string",
+            "nullable": true
+          },
+          "rcNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "accountNumber": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "bankCode": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "NextOfKin": {
+        "required": [
+          "address",
+          "email",
+          "first_name",
+          "gender",
+          "phone",
+          "relationship",
+          "surname"
+        ],
+        "type": "object",
+        "properties": {
+          "first_name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "middle_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "surname": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "gender": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "phone": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "relationship": {
+            "$ref": "#/components/schemas/RelationShip"
+          },
+          "address": {
+            "$ref": "#/components/schemas/Address"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RelationShip": {
+        "enum": [
+          "Brother",
+          "Sister",
+          "Mother",
+          "Father",
+          "Spouse",
+          "Cousin",
+          "Nephew",
+          "Niece",
+          "Friend",
+          "Son",
+          "Daughter",
+          "Aunty",
+          "Uncle",
+          "BrotherInLaw",
+          "SisterInLaw",
+          "FatherInLaw",
+          "MotherInLaw"
+        ],
+        "type": "string"
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 12345abcdef\"",
+        "scheme": "Bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": []
+    }
+  ]
+}

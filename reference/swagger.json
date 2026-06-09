@@ -138,7 +138,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Retrieves the Loan Application Form (LAF) associated with a specific loan. This endpoint returns the formal documentation tied to a loan application, which can be used for record keeping, compliance, or review purposes. Replace {loanId} in the URL with the actual loan ID."
       }
     },
     "/api/fcmb/loan/{loanId}/laf/accept": {

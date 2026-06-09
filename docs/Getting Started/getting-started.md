@@ -2,9 +2,18 @@
 title: Welcome to Fincore Service API
 hidden: false
 ---
-<Callout icon="📘" theme="info">
-  **Template:**  Delete this callout and edit this page with your content and links.
-</Callout>
+> 📘 Welcome to the Fincore Service API<br />This API gives you direct access to the core services that power Credit Direct's lending and banking operations — from onboarding customers to processing loans and tracking transactions in real time.<br />Whether you're a developer on the Credit Direct team or a partner looking to integrate with our platform, this documentation will walk you through everything you need to get started.<br />What This API Covers
+>
+> Customer Management — Create and retrieve customer account information
+> FCMB Loan Processing — Apply for loans, check loan status, and manage loan details through FCMB
+> POS Transactions — Process and track Point of Sale transactions
+> Webhook Notifications — Get real-time alerts when payment events happen
+> Transaction Management — Initiate and monitor financial transactions
+>
+> Base URL
+> [https://fincore-qa.creditdirect.ng](https://fincore-qa.creditdirect.ng)
+> A Quick Note
+> This is the QA (testing) environment. All endpoints here are for integration and testing purposes. Please reach out to the Credit Direct technical team to get access to the production environment.
 
 <Cards>
   {/* Edit the props below to customize these components */}

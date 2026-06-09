@@ -240,7 +240,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Sends a One-Time Password (OTP) to the customer associated with a specific Loan Application Form (LAF). This is used to verify the customer's identity before they can confirm or sign their loan agreement. The OTP is typically delivered via SMS or email. Replace {reference} in the URL with the actual LAF reference number."
       }
     },
     "/api/Laf/otp/confirm": {

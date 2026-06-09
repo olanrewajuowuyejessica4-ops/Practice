@@ -272,7 +272,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Validates the One-Time Password (OTP) submitted by the customer to confirm their identity and authorize their Loan Application Form (LAF). Once the OTP is successfully verified, the customer's consent is recorded and the loan agreement process moves forward."
       }
     },
     "/api/Transaction/initiate-transfer": {

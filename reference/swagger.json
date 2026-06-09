@@ -162,7 +162,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Accepts and confirms the Loan Application Form (LAF) for a specific loan. Once a customer has reviewed their loan terms and agreed to proceed, this endpoint is called to formally accept the LAF and move the loan application to the next stage of processing. Replace {loanId} in the URL with the actual loan ID."
       }
     },
     "/api/fcmb/repayment-notification": {

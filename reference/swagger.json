@@ -304,7 +304,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Initiates a financial transfer on behalf of a customer. This endpoint submits a transfer request to the Fincore system, which processes and routes the transaction accordingly. A successful request returns a transaction reference that can be used to track the transfer status."
       }
     },
     "/api/Transaction/{transRef}/re-query": {

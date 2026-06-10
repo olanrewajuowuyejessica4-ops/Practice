@@ -6,3 +6,4 @@ excerpt: >-
   occurs.
 hidden: false
 ---
+Use this endpoint to receive automated repayment notifications from FCMB, ensuring loan repayment records are always accurate and up to date.

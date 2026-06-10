@@ -6,3 +6,4 @@ excerpt: >-
   information.
 hidden: false
 ---
+Use these endpoints to create new customer accounts and retrieve existing customer information.

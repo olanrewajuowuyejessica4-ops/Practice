@@ -6,3 +6,4 @@ excerpt: >-
   and access loan documentation.
 hidden: false
 ---
+Use these endpoints to apply for loans, retrieve loan details, and access loan documentation through FCMB.

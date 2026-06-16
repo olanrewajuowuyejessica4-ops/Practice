@@ -58,7 +58,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Retrieves the details of an existing customer using their unique customer ID. This endpoint is useful for viewing a customer's profile and account information. Replace {id} in the URL with the actual customer ID before making the request."
       }
     },
     "/api/fcmb/loan/apply": {

@@ -664,7 +664,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Verifies a merchant user account using the verification token and email address provided during registration. Use this endpoint to activate a newly registered account. Supply the token and email as query parameters before making the request."
       }
     },
     "/api/merchants/login": {

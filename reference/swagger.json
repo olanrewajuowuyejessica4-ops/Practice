@@ -351,7 +351,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Retrieves a list of predefined values for a specified lookup category. Use this endpoint to populate dropdown fields with system-defined options such as states, channels, or other reference data. Replace {codeId} in the URL with the appropriate lookup code before making the request."
       }
     },
     "/api/Lookup/child_dropdown_values/{codeId}": {

@@ -1640,7 +1640,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Assigns one or more permissions to a role. Use this endpoint to manage role access by associating permissions with a specific role. Replace {roleUuid} with the actual role identifier before making the request."
       }
     },
     "/api/roles/{roleUuid}/permissions/{permissionUuid}": {

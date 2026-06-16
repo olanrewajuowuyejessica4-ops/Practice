@@ -1,0 +1,4 @@
+---
+title: MerchantAuth
+hidden: false
+---

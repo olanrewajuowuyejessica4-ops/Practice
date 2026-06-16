@@ -1,0 +1,7 @@
+- post_api-merchants-register
+- get_api-merchants-verify-account
+- post_api-merchants-login
+- post_api-merchants-forgot-password
+- get_api-merchants-verify-reset-token
+- post_api-merchants-reset-password
+- post_api-merchants-refresh

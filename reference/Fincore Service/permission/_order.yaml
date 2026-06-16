@@ -1,0 +1,4 @@
+- get_api-permissions
+- post_api-permissions
+- get_api-permissions-permissionuuid
+- put_api-permissions-permissionuuid

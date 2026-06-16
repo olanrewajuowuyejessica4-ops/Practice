@@ -1,0 +1,6 @@
+- get_api-roles
+- post_api-roles
+- get_api-roles-roleuuid
+- put_api-roles-roleuuid
+- put_api-roles-roleuuid-permissions
+- delete_api-roles-roleuuid-permissions-permissionuuid

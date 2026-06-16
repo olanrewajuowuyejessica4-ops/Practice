@@ -1040,7 +1040,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Retrieves a paginated list of permissions available in the system. Use this endpoint to view existing permissions and their associated details. Pagination parameters can be supplied to control the results returned."
       },
       "post": {
         "tags": [

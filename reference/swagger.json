@@ -733,7 +733,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Authenticates a merchant user and grants access to protected resources. Use this endpoint to log in with valid credentials. On success, the system returns authentication details and access credentials."
       }
     },
     "/api/merchants/forgot-password": {

@@ -272,7 +272,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Verifies a previously issued OTP for a loan agreement. Use this endpoint to confirm the OTP and complete the loan agreement verification process. On success, the agreement is validated and the confirmation status is returned."
       }
     },
     "/api/loans": {

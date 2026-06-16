@@ -499,7 +499,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Submits merchant verification information for validation. Use this endpoint to provide verification details required for merchant onboarding or compliance checks. On success, the verification request is processed and the verification result is returned."
       }
     },
     "/api/merchants/verification-catalogues": {

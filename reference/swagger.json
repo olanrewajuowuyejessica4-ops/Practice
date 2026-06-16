@@ -240,7 +240,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Generates and sends a One-Time Password (OTP) for loan agreement verification. Use this endpoint to initiate the agreement confirmation process. Replace {reference} in the URL with the actual reference value before making the request."
       }
     },
     "/api/Laf/otp/confirm": {

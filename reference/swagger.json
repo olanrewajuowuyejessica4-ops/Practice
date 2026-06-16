@@ -1442,7 +1442,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Retrieves the details of a specific role using its unique identifier. Use this endpoint to view role information and configuration. Replace {roleUuid} with the actual role identifier before making the request."
       },
       "put": {
         "tags": [

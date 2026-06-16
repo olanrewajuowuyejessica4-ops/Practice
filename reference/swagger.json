@@ -1107,7 +1107,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Creates a new permission within the system. Use this endpoint to define a new permission that can be assigned to roles and users. On success, the permission is created and returned."
       }
     },
     "/api/permissions/{permissionUuid}": {

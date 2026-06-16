@@ -529,7 +529,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Retrieves the available merchant verification catalogues and requirements. Use this endpoint to obtain the list of supported verification types and categories before submitting verification requests."
       }
     },
     "/api/merchants/register": {

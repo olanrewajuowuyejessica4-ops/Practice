@@ -162,7 +162,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Accepts the Loan Agreement Form (LAF) for a specified loan application. Use this endpoint after reviewing the agreement to confirm acceptance and continue the loan processing workflow. Replace {loanId} in the URL with the actual loan ID before making the request."
       }
     },
     "/api/fcmb/repayment-notification": {

@@ -979,7 +979,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Generates a new access token using a valid refresh token. Use this endpoint to maintain an authenticated session without requiring the user to log in again. On success, a new access token is returned."
       }
     },
     "/api/MerchantProfile": {

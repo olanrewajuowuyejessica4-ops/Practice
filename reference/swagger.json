@@ -1168,7 +1168,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Retrieves the details of a specific permission using its unique identifier. Use this endpoint to view information about a particular permission. Replace {permissionUuid} with the actual permission identifier before making the request."
       },
       "put": {
         "tags": [

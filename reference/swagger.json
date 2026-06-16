@@ -1865,7 +1865,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Assigns one or more roles to a user account. Use this endpoint to manage user access and permissions by associating roles with a specific user. Replace {userUuid} with the actual user identifier before making the request."
       }
     },
     "/api/User/{userUuid}/roles/{roleUuid}": {

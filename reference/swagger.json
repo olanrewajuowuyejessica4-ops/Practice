@@ -1710,7 +1710,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Removes a permission from a role. Use this endpoint to revoke access rights associated with a role. Replace {roleUuid} and {permissionUuid} with the appropriate identifiers before making the request."
       }
     },
     "/api/Transaction/initiate-transfer": {

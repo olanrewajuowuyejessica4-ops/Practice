@@ -1266,7 +1266,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Updates an existing permission. Use this endpoint to modify permission details such as its name or description. Replace {permissionUuid} with the actual permission identifier before making the request."
       }
     },
     "/api/roles": {

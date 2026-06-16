@@ -375,7 +375,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Retrieves a list of child or dependent values associated with a specific lookup category. Use this endpoint to populate secondary dropdown fields based on a selected parent value. Replace {codeId} in the URL with the appropriate lookup code before making the request."
       }
     },
     "/api/merchants": {

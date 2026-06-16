@@ -304,7 +304,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Creates a new loan request for an existing customer. Use this endpoint to submit loan details such as the customer identifier, loan amount, tenure, and product information. On success, the loan record is created and the loan details are returned."
       }
     },
     "/api/loans/{clientId}": {

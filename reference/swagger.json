@@ -328,7 +328,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Retrieves all loan information associated with a specific customer. Use this endpoint to view the customer's loan history, active loans, and related loan details. Replace {clientId} in the URL with the actual customer ID before making the request."
       }
     },
     "/api/Lookup/dropdown_values/{codeId}": {

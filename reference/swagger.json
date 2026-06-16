@@ -1935,7 +1935,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Removes a role from a user account. Use this endpoint to revoke role-based access from a user. Replace {userUuid} and {roleUuid} with the appropriate identifiers before making the request."
       }
     },
     "/api/User/change-password": {

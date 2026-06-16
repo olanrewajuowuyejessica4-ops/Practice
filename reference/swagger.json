@@ -782,7 +782,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Initiates the password recovery process for a merchant user account. Use this endpoint to request a password reset by providing the registered email address. On success, password reset instructions are sent to the user."
       }
     },
     "/api/merchants/verify-reset-token": {

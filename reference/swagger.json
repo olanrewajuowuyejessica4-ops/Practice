@@ -841,7 +841,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Validates a password reset token before allowing a password change. Use this endpoint to confirm that the reset token is valid and has not expired. Supply the token as a query parameter before making the request."
       }
     },
     "/api/merchants/reset-password": {

@@ -1314,7 +1314,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Retrieves a paginated list of roles available in the system. Use this endpoint to view all configured roles and their details. Pagination parameters can be supplied to control the results returned."
       },
       "post": {
         "tags": [

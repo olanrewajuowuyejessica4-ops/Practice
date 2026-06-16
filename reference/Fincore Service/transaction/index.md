@@ -6,4 +6,4 @@ excerpt: >-
   transactions.
 hidden: false
 ---
-Use these endpoints to initiate financial transfers and re-query the status of existing transactions.
+<br />

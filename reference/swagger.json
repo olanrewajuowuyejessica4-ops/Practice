@@ -1742,7 +1742,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Initiates a fund transfer transaction between accounts. Use this endpoint to submit transfer details including source account, destination account, amount, and transaction reference. On success, the transfer request is processed and transaction details are returned."
       }
     },
     "/api/Transaction/{transRef}/re-query": {

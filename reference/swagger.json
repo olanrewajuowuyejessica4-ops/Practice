@@ -992,7 +992,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Retrieves the profile information of the authenticated merchant. Use this endpoint to view the merchant's account details, business information, and profile settings."
       }
     },
     "/api/permissions": {

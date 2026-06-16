@@ -1540,7 +1540,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Updates an existing role. Use this endpoint to modify role details such as its name or description. Replace {roleUuid} with the actual role identifier before making the request."
       }
     },
     "/api/roles/{roleUuid}/permissions": {

@@ -1381,7 +1381,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Creates a new role within the system. Use this endpoint to define a role that can be assigned to users and associated with permissions. On success, the role is created and returned."
       }
     },
     "/api/roles/{roleUuid}": {

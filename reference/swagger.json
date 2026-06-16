@@ -194,7 +194,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Receives loan repayment notifications from the FCMB POS platform. Use this webhook endpoint to submit repayment information, including loan details, transaction references, and repayment amounts. On success, the repayment record is processed and updated in the system."
       }
     },
     "/api/Laf/{reference}/document": {

@@ -1,10 +1,15 @@
 ---
 title: Welcome to Fincore Service API
+excerpt: >-
+  Welcome to the Fincore Service API documentation. This API gives you direct
+  access to the core services that power Credit Direct's lending and banking
+  operations — from onboarding customers to processing loans and tracking
+  transactions in real time. Whether you're a developer on the Credit Direct
+  team or a partner looking to integrate with our platform, this documentation
+  will walk you through everything you need to get started.
 hidden: false
 ---
 ### What This API Covers
-
-This API gives you direct access to the core services that power Credit Direct's lending and banking operations — from onboarding customers to processing loans and tracking transactions in real time. Whether you're a developer on the Credit Direct team or a partner looking to integrate with our platform, this documentation will walk you through everything you need to get started.
 
 - Customer Management - Create and retrieve customer account information
 - FCMB Loan Processing - Apply for loans, check loan status, and manage loan details through FCMB

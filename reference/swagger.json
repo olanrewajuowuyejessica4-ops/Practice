@@ -90,7 +90,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Submits a loan application through the FCMB POS lending service. Use this endpoint to apply for a loan by providing the applicant's BVN, account information, and requested loan amount. On success, the loan application is created and the application details are returned."
       }
     },
     "/api/fcmb/loan/{id}": {

@@ -217,7 +217,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Retrieves the loan agreement document associated with a specific reference number. Use this endpoint to access and review the agreement before completing the acceptance process. Replace {reference} in the URL with the actual reference value before making the request."
       }
     },
     "/api/Laf/{reference}/otp/send": {

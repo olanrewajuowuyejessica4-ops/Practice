@@ -598,7 +598,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Creates a new merchant user account. Use this endpoint to register a merchant user by providing personal and login details. On success, the user account is created and ready for verification."
       }
     },
     "/api/merchants/verify-account": {

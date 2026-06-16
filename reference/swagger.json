@@ -2004,7 +2004,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Changes the password of the authenticated user account. Use this endpoint to update account credentials by providing the current password and a new password. On success, the user's password is updated securely."
       }
     }
   },

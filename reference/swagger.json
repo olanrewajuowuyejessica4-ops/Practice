@@ -114,7 +114,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Retrieves the details of a previously submitted FCMB POS loan application. Use this endpoint to check the loan information and application status. Replace {id} in the URL with the actual loan ID before making the request."
       }
     },
     "/api/fcmb/loan/{loanId}/laf": {

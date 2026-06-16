@@ -1765,7 +1765,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Retrieves the current status of a previously initiated transfer transaction. Use this endpoint to confirm whether a transaction was successful, pending, or failed. Replace {transRef} with the actual transaction reference before making the request."
       }
     },
     "/api/User/{userUuid}": {

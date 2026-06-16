@@ -430,7 +430,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Creates a new merchant profile in the system. Use this endpoint to onboard a merchant by providing the required business details. On success, the merchant record is created and the registration information is returned."
       }
     },
     "/api/merchants/verify": {

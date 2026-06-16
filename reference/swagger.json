@@ -910,7 +910,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Resets the password for a merchant user account. Use this endpoint to create a new password after successful token verification. On success, the account password is updated."
       }
     },
     "/api/merchants/refresh": {

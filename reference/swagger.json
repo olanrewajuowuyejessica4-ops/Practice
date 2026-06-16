@@ -138,7 +138,8 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "description": "Retrieves the Loan Agreement Form (LAF) associated with a specific loan application. Use this endpoint to access and review the loan agreement before acceptance. Replace {loanId} in the URL with the actual loan ID before making the request."
       }
     },
     "/api/fcmb/loan/{loanId}/laf/accept": {
